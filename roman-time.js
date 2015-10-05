@@ -8,7 +8,7 @@ function HoursToRome(hours)
 {	
 	var a = hours/10; // количество десяток
 	var b = ((hours%10)/5); // количество пятерок
-	var c = ((hours%5)/1); // количество единиц
+	var c = hours%5; // количество единиц
 	
 	for (a; a >= 1; a--)
 	{
@@ -39,7 +39,7 @@ function MinutesToRome(minutes)
   var d = minutes/50; //количество 50
 	var a = (minutes%50)/10; // количество 10
 	var b = ((minutes%10)/5); // количество 5
-	var c = ((minutes%5)/1); // количество 1
+	var c = minutes%5; // количество 1
 	
 	for (d; d >= 1; d--)
 	{
